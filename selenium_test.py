@@ -4,9 +4,9 @@ from selenium.webdriver.common.keys import Keys
 import os
 
 def test_home():
-    options = Options()
-    options.add_argument("--no-sandbox")
-    options.add_argument("headless")
+    option = Options()
+    option.add_argument("--no-sandbox")
+    option.add_argument("headless")
     driverPath = os.getcwd() + '/chromedriver'
     driver = webdriver.Chrome(driverPath, options=option)
     driver.get("http://204.209.76.213:8000/")
