@@ -5,6 +5,7 @@ import os
 
 def test_home():
     option = Options()
+    options.add_argument("--no-sandbox")
     option.add_argument("headless")
     driverPath = os.getcwd() + '/chromedriver'
     driver = webdriver.Chrome(driverPath, options=option)
