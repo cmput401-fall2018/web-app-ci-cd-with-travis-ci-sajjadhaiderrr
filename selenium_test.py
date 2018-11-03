@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 def test_home():
     options = Options()
     options.add_argument("--headless")
-    driver = webdriver.Chrome(chrome_options=options)
+    driver = webdriver.Chrome()
     driver.get("http://204.209.76.213:8000/")
 
     assert driver.find_element_by_id("name") == "Sajjad Haider"
