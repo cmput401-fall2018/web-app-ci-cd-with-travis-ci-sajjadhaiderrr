@@ -1,8 +1,11 @@
+nltk==3.2.5
+pyreadline==2.1
+pytest==3.9.3
+selenium==3.141.0
 Django==2.1.1
 django-filter==2.0.0
 djangorestframework==3.8.2
 djangorestframework-jsonapi==2.6.0
 inflection==0.3.1
-pkg-resources==0.0.0
 pytz==2018.5
 six==1.11.0
