@@ -3,8 +3,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
 def test_home():
-    options = Options()
-    options.add_argument("--headless")
     driver = webdriver.Chrome()
     driver.get("http://204.209.76.213:8000/")
 
@@ -19,6 +17,8 @@ def test_home():
     assert driver.find_element_by_id("work") == "Tangent Collective 6 months"
     
     assert driver.find_element_by_id("contact") == "780-920-8128"  
+    
+    driver.quit()
 
 test_home()
 
