@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import os
 
 def test_home():
+    option = Options()
     option.add_argument("headless")
     driverPath = os.getcwd() + '/chromedriver'
     driver = webdriver.Chrome(driverPath, options=option)
